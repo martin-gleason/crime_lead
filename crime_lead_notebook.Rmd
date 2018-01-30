@@ -1,0 +1,15 @@
+---
+title: "Crime and Lead"
+output: html_notebook
+---
+
+```{r, installedPackages, include=T, echo = F, message= F}
+library("tidyverse")
+library("ggmap")
+library("viridisLite")
+
+lead <- read_csv("/Users/marty/Dropbox (Personal)/codingProjects/R/crime_lead/Public_Health_Statistics__Screening_for_elevated_blood_lead_levels_in_children_aged_0-6_years_by_year__Chicago__1999_-_2013.csv")
+
+lead_1999 <- ggplot(lead, aes(x = `Community Area Name`, y = `Screened for Lead in 1999`)) + geom_point() + coord_flip()
+
+```
