@@ -12,4 +12,5 @@ lead <- read_csv("/Users/marty/Dropbox (Personal)/codingProjects/R/crime_lead/Pu
 
 lead_1999 <- ggplot(lead, aes(x = `Community Area Name`, y = `Screened for Lead in 1999`)) + geom_point() + coord_flip()
 
+
 ```
